@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Налаштування</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240411024822">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page page__bot-event">
+			<section class="bot-event">
+				<div class="bot-event__container">
+					<h2 class="bot-event__title title">Налаштування</h2>
+					<div class="bot-event__actions bot-actions">
+						<div class="bot-actions__search search">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Пошук..." class="search__input input" />
+							<button type="button" class="search__icon _icon-cross"></button>
+						</div>
+					</div>
+					<form data-dev method="POST" action="test.php" class="bot-event__form form">
+						<div class="bot-event__table table">
+							<table class="table__item">
+								<thead class="table__header">
+									<tr class="table__row table__row--header">
+										<th class="table__cell table__cell--header">Назва параметру</th>
+										<th class="table__cell table__cell--header">Значення</th>
+										<th class="table__cell table__cell--header">Пояснення</th>
+										<th class="table__cell table__cell--header">Дії</th>
+									</tr>
+								</thead>
+								<tbody class="table__body">
+									<tr class="table__row">
+										<th class="table__cell">Приховати кнопку календаря</th>
+										<th class="table__cell">
+											<div class="checkbox">
+												<input id="c_1" class="checkbox__input" type="checkbox" name="hide_calendar_button" />
+												<label for="c_1" class="checkbox__label"></label>
+											</div>
+										</th>
+										<th class="table__cell">Чи треба приховувати кнопку</th>
+										<th class="table__cell table-actions">
+											<a href="" class="table-actions__button _icon-open-eye"></a>
+											<a href="" class="table-actions__button _icon-edit"></a>
+											<a href="" class="table-actions__button _icon-bin"></a>
+										</th>
+									</tr>
+									<tr class="table__row">
+										<th class="table__cell">Приховати кнопку оплати</th>
+										<th class="table__cell">
+											<div class="checkbox">
+												<input id="c_2" class="checkbox__input" type="checkbox" checked name="hide_payment_button" />
+												<label for="c_2" class="checkbox__label"></label>
+											</div>
+										</th>
+										<th class="table__cell">Чи треба приховувати кнопку</th>
+										<th class="table__cell table-actions">
+											<a href="" class="table-actions__button _icon-open-eye"></a>
+											<a href="" class="table-actions__button _icon-edit"></a>
+											<a href="" class="table-actions__button _icon-bin"></a>
+										</th>
+									</tr>
+									<tr class="table__row">
+										<th class="table__cell">Час відправлення звіту</th>
+										<th class="table__cell">
+											<input autocomplete="off" type="time" name="time_sending" value="20:18" placeholder="" class="table__input input" />
+										</th>
+										<th class="table__cell">Чи треба приховувати кнопку</th>
+										<th class="table__cell table-actions">
+											<a href="" class="table-actions__button _icon-open-eye"></a>
+											<a href="" class="table-actions__button _icon-edit"></a>
+											<a href="" class="table-actions__button _icon-bin"></a>
+										</th>
+									</tr>
+									<tr class="table__row">
+										<th class="table__cell">Адміни групи</th>
+										<th class="table__cell">
+											<input autocomplete="off" type="text" name="group_admin" value="2318367613" placeholder="" class="table__input input" />
+										</th>
+										<th class="table__cell">Чи треба приховувати кнопку</th>
+										<th class="table__cell table-actions">
+											<a href="" class="table-actions__button _icon-open-eye"></a>
+											<a href="" class="table-actions__button _icon-edit"></a>
+											<a href="" class="table-actions__button _icon-bin"></a>
+										</th>
+									</tr>
+								</tbody>
+								<tfoot class="table__header">
+									<tr class="table__row table__row--header">
+										<th class="table__cell table__cell--header">Назва параметру</th>
+										<th class="table__cell table__cell--header">Значення</th>
+										<th class="table__cell table__cell--header">Пояснення</th>
+										<th class="table__cell table__cell--header">Дії</th>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+						<div class="event-form__actions">
+							<button type="submit" class="event-form__button button button--save _icon-save">Зберегти і вийти</button>
+							<a href="" type="button" class="event-form__button button button--cancel _icon-blocked">Скасувати</a>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240411024822"></script>
+</body>
+
+</html>

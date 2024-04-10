@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Event</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240411024822">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page page__create-event">
+			<section class="create-event">
+				<div class="create-event__container">
+					<h2 class="create-event__title title">Захід <span> Додати Захід. </span><a href="" class="_icon-angle-double">Назад до всіх Захід</a></h2>
+					<form data-dev action="test.php" method="POST" class="create-event__form event-form">
+						<div class="event-form__items">
+							<div class="event-form__item">
+								<label class="event-form__label">Період відправки</label>
+								<select name="period_send">
+									<option value="1">Раз в тиждень</option>
+									<option value="2">Разовий захід</option>
+								</select>
+							</div>
+							<div class="event-form__item">
+								<label class="event-form__label">Текст заходу</label>
+								<div class="event-form__quill">
+									<div data-ql-name="event_text" data-ql-placeholder="Привіт чекаємо тебе  в понеділок _date_ на стадіоні 'Арсенал'" id="quill-editor"></div>
+								</div>
+								<div class="event-form__descr">Текст який побачать користувачі телеграму, _date_ - це ключ замість нього підставляється дата заходу</div>
+							</div>
+							<div class="event-form__item">
+								<label class="event-form__label">Період відправки</label>
+								<select name="day_send">
+									<option value="1">Понеділок</option>
+									<option value="2">Вівторок</option>
+									<option value="3">Середу</option>
+									<option value="4">Четверг</option>
+									<option value="5">П'ятницю</option>
+									<option value="6">Суботу</option>
+									<option value="7">Неділю</option>
+								</select>
+							</div>
+							<div class="event-form__item">
+								<div class="event-form__label">Час коли відбувається івент</div>
+								<input type="time" name="time_event" data-error="Помилка" placeholder="" class="event-form__input input" />
+								<div class="event-form__descr">Запишіть час у форматі 13:10, цей час буде використовуватися для нагадування в гугл календарі</div>
+							</div>
+							<div class="event-form__item">
+								<label class="event-form__label">Максимальна кількість участників</label>
+								<input type="number" value="100" name="max_participants" data-error="Помилка" placeholder="" class="event-form__input input" />
+								<div class="event-form__descr">Якщо перевищенно буде кількість участників всі інші будуть потрапляти в лист очікування</div>
+							</div>
+							<div class="event-form__item">
+								<div class="event-form__label">Час відправки івенту</div>
+								<input type="time" name="time_sending_event" data-error="Помилка" placeholder="" class="event-form__input input" />
+							</div>
+							<div class="event-form__item">
+								<label class="event-form__label">День відправки івенту</label>
+								<select name="day_sending_event">
+									<option value="1">Понеділок</option>
+									<option value="2">Вівторок</option>
+									<option value="3">Середу</option>
+									<option value="4">Четверг</option>
+									<option value="5">П'ятницю</option>
+									<option value="6">Суботу</option>
+									<option value="7">Неділю</option>
+								</select>
+							</div>
+							<div class="event-form__item">
+								<label class="event-form__label">В яку гілку (топік) відправляти захід?(залишити пустим, якщо немає гілок, топіків в групі)</label>
+								<select name="event_branch">
+									<option value="1">monday game Доброго дня</option>
+									<option value="1">ЧТ Привіт усім</option>
+									<option value="1">ПТ Новина</option>
+									<option value="2">СР i_am_out_event=5_cur_ev=157</option>
+								</select>
+								<div class="event-form__descr">треба додати айді гілки, якщо у вас є гілки в групі, детальніше <a href="" class="event-form__link">Як додати айді гілки?</a> <a href="" class="event-form__link">про супергрупи, гілки</a></div>
+							</div>
+						</div>
+						<div class="event-form__actions">
+							<button type="submit" class="event-form__button button button--save _icon-save">Зберегти і вийти</button>
+							<button type="button" class="event-form__button button button--draft _icon-edit">Чернетка</button>
+							<a href="" type="button" class="event-form__button button button--cancel _icon-blocked">Скасувати</a>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240411024822"></script>
+</body>
+
+</html>
